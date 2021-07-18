@@ -1,0 +1,278 @@
+/* Google Font */
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: beige;
+}
+section{
+    width: 70%;
+    margin: 20px auto 20px;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+/* Header Style */
+header{
+    width: 100%;
+    background-color: #f851a8;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+.logo{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+    margin-right: 10px;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+header ul li{
+    padding-right: 20px;
+}
+header ul li:last-child{
+    padding-right: 0px;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+}
+/* Top player */
+.top-player{
+    border-radius: 10px;
+}
+.top-player h2{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.players{
+    background-color: white;
+}
+.players > .player-with-position:nth-child(1) .player {
+    background-color: hotpink;
+    color: white;
+}
+.players > .player-with-position:nth-child(1) .player-social-link i {
+    color: white;
+}
+.players > .player-with-position:nth-last-child(1) .player {
+    background-color: rgb(228, 144, 186);
+    color: black;
+}
+.player-with-position{
+    display: flex;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.position{
+    width: 10%;
+    margin: auto;
+}
+.position h1{
+    font-size: 60px;
+}
+.player{
+    display: flex;
+    width: 80%;
+    margin-right: auto;
+    align-items: center;
+    background-color: #f4f0f1;
+    padding: 15px 8px;
+    border-radius: 60px 10px 10px 60px;
+}
+.player-info i{
+    margin-right: 10px;
+}
+.player div:last-of-type{
+    margin-left: auto;
+    margin-bottom: auto;
+}
+.player-social-link i{
+    font-size: 25px;
+    color: black;
+}
+.player img{
+    width: 90px;
+    margin-right: 20px;
+}
+.player-info h3{
+    padding-bottom: 10px;
+}
+.player-info p{
+    font-size: 14px;
+}
+/* Your Path */
+.your-path{
+    
+    text-align: center;
+}
+.progress {
+    margin:20px auto;
+    padding:0;
+    width:90%;
+    height:30px;
+    overflow:hidden;
+    background:#e5e5e5;
+    border-radius:6px;
+  }
+  
+  .bar {
+    position:relative;
+    float:left;
+    min-width:1%;
+    height:100%;
+    background:#00b657;
+  }
+  
+  .percent {
+     position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    margin:0;
+    font-family:tahoma,arial,helvetica;
+    font-size:12px;
+    color:white;
+  }
+  .milestones{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+  }
+
+.milestone{
+    width: 80%;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #d4cbcb;
+    padding: 10px 5px;
+    border-radius: 45px;
+}
+.milestone p{
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+
+.milestone.complete{
+    background-color: hotpink;
+}
+.milestone.running{
+    background-color: rgb(228, 144, 186);
+}
+.module{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.module.complete{
+    background-color: #d4c3c3;
+}
+.module.complete-last span{
+    display: none;
+}
+/* Metrics */
+.your-metric h2{
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.metrics{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.metric{
+    width: 120px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.metrics .metric:nth-child(2n){
+    background: linear-gradient( 90deg, #e91e6236 0,#3f51b544 58%)
+}
+.metrics .metric:nth-child(2n+1){
+    background: linear-gradient( 90deg, #1ee95188 0,#a3b53f81 58%)
+}
+.metric h2{
+    font-size: 40px;
+}
+.metric p{
+    color: #3c3434;
+}
+/* Responsiveness */
+@media only screen and (max-width: 577px) {
+    section{
+        width: 95%;
+    }
+    header{
+        font-size: 12px;
+    }
+    .logo img{
+        width: 40px;
+        margin-right: 7px;
+    }
+    header ul li{
+        padding-right: 8px;
+    }
+    header ul li img{
+        width: 40px;
+    }
+    .position h1{
+        font-size: 40px;
+    }
+    .player{
+        padding: 15px 8px;
+        border-radius: 60px 10px 10px 60px;
+    }
+    .player img{
+        width: 60px;
+        margin-right: 10px;
+    }
+    .player-info h3{
+        padding-bottom: 5px;
+    }
+    .player-info p{
+        font-size: 12px;
+    }
+    .player-social-link i{
+        font-size: 20px;
+    }
+    .milestones{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .metric{
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (min-width: 578px) and (max-width: 912px){
+    section{
+        width: 90%;
+    }
+    .milestones{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
